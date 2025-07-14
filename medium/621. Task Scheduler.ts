@@ -36,7 +36,7 @@ function leastInterval(tasks: string[], n: number): number {
     }
 
     const partCounts = maxCounts - 1;
-    const partLength = n - 1;
+    const partLength = n + 1;
     const emptySlots = partCounts * (partLength - maxCountTasks);
     const availableTasks = tasks.length - maxCounts * maxCountTasks;
     const idles = Math.max(0, emptySlots - availableTasks);

@@ -18,7 +18,7 @@
  */
 
 
-class ListNode2 {
+class ListNode {
     val: number
     next: ListNode | null
     constructor(val?: number, next?: ListNode | null) {
@@ -28,7 +28,7 @@ class ListNode2 {
 }
 
 
-function oddEvenList(head: ListNode | null): ListNode2 | null {
+function oddEvenList(head: ListNode | null): ListNode | null {
     if(!head || !head.next || !head.next.next)
         return head;
 
